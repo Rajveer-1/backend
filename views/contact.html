@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   input{
+    width: 50%;
+    padding: .7%;
+    margin-top: 14px;
+    text-align: center;
+    border-radius: 3%;
+   }
+</style>
+<body>
+    <div class="contact">
+        <h1>Contact us</h1>
+        <form action="/contact" method="post">
+            <input type="text" name="name" class="myinput" placeholder="Enter the name">
+            <input type="phone" name="phone" class="myinput" placeholder="Enter the Phone Number">
+            <input type="email" class="myinput" name="email" placeholder="Enter the email">
+            <input type="text" class="myinput" name="description" id=""placeholder="description">
+            <button style="margin-top:2% ;padding: 1%;">Submit Now</button>
+        </form>
+    </div>
+    <!-- <script src="index.js"></script> -->
+    <script src="app.js" id="data" type="application/json"></script>
+</body>
+</html>
